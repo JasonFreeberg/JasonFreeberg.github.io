@@ -83,7 +83,7 @@ analytics:
 author:
   name             : "Jason Freeberg"
   avatar           : "/assets/img/prof-pic.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Program Manager on Azure App Service and car enthusiast."
+  bio              : "Program Manager at Microsoft and car enthusiast"
   location         : "Kirkland, WA"
   email            :
   links:
