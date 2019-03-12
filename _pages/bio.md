@@ -4,8 +4,6 @@ pagination: false
 title: About
 ---
 
-Not really sure what to put here. I'm a 23 year-old living in the suburbs of Seattle. I work at Microsoft and I love cars. But I set a goal to fill this page...
+Hi there! I am a recent graduate from UC Santa Barbara, now living in the suburbs of Seattle. I work at Microsoft and I love cars, hiking, and non-fiction. I started this blog because I realized after college that writing things down is a great way to solidify what you're learning when there aren't any exams or homework!
 
-I wish I could say I was born in a log cabin in the middle of Winter under some extraordinary circumstances. I grew up in the safe and suburban town of Novato, California... otherwise known as "the gateway to wine country". (Yes, that is actually the town motto.) It really is quite a beautiful town with rolling hills that alternate between deep greens in the Winter and rolling hills of amber in the summer months. 
-
-![/assets/img/posts/2019/2/burdell.jpg]()
+I studied Statistics and Technology Management in college, but my college years were largely defined by founding and growing the university's Data Science club and competing in the yearly startup competition.
