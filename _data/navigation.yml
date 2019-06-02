@@ -1,7 +1,5 @@
 # main links
 main:
-  - title: "Bio"
-    url: /bio/
   - title: "Blog"
     url: /blog/
   # - title: "Sample Collections"
