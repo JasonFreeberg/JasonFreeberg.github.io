@@ -2,6 +2,8 @@
 main:
   - title: "Blog"
     url: /blog/
+  - title: "Experience"
+    url: https://www.linkedin.com/in/jfreeberg/
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
