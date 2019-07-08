@@ -4,7 +4,7 @@ pagination: false
 title: About
 header:
   image: /assets/img/blubaru-header.jpg
-  image_description: "Subaru WRX in the Puguet Sound."
+  image_description: "Subaru WRX in the Puget Sound."
 ---
 
 Hi there! I am a recent graduate from UC Santa Barbara, now living in the suburbs of Seattle. I work at Microsoft and I love cars, hiking, and non-fiction books. I started this blog because I realized after college that writing things down is a great way to solidify what you're learning (especially when there aren't any exams or homework).
