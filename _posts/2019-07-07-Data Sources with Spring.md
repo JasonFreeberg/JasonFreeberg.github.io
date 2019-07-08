@@ -8,7 +8,7 @@ tags:
     - App Service
 ---
 
-This article shows how to spin up a Postgres Server on Azure, deploy a Spring Boot app to App Service, and how to connect the app to the database. The [next article]({{ site.baseurl }}{% post_url 2019-07-07-Key Vault References with Spring %}) shows how to reconfigure this app to use Key Vault references.
+This article shows how to spin up a Postgres Server on Azure, deploy a Spring Boot app to App Service, and how to connect the app to the database. A future article will show how to reconfigure this app to use Key Vault references.
 
 > To do this tutorial, you will need [Maven 3](https://maven.apache.org/download.cgi), [Java 8](https://www.azul.com/downloads/zulu/), and the [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest) installed locally.
 
@@ -136,7 +136,7 @@ Browse to your application and you will see the same app now running on App Serv
 
 ## Next steps
 
-Follow [this guide](../key-vault) to learn how to store your connection strings in Key Vault, thus providing easy secret management and rotation! In this example we also disabled SSL, but for a production environment we should install the Postgres certificate on App Service so we can connect securely. I plan to cover this in a future article, in the meantime please see this documentation on [installing the Postgres certificate on your local machine](https://docs.microsoft.com/en-us/azure/postgresql/concepts-ssl-connection-security#applications-that-require-certificate-verification-for-ssl-connectivity).
+A future article will show how to store your connection strings in Key Vault, thus providing easy secret management and rotation! In this example we disabled SSL, but for a production environment we should install the Postgres certificate on App Service so we can connect securely. I plan to cover this in a future article, in the meantime please see this documentation on [installing the Postgres certificate on your local machine](https://docs.microsoft.com/en-us/azure/postgresql/concepts-ssl-connection-security#applications-that-require-certificate-verification-for-ssl-connectivity).
 
 ## Helpful Links
 

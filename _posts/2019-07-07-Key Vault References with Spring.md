@@ -1,5 +1,6 @@
 ---
 title: "Azure Key Vault References with Spring Apps"
+published: false
 tags:
     - Azure
     - Java
