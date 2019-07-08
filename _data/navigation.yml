@@ -2,7 +2,7 @@
 main:
   - title: "Blog"
     url: /blog/
-  - title: "Experience"
+  - title: "Resume"
     url: https://www.linkedin.com/in/jfreeberg/
   # - title: "Sample Collections"
   #   url: /collection-archive/

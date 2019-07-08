@@ -4,6 +4,7 @@ tags:
     - technology
     - data science
     - data visualization
+published: false
 ---
 
 > This an introduction to a three-part guide on my favorite art project from college. ([Part 1](TODO), [Part 2](TODO), [Part 3](TODO))
