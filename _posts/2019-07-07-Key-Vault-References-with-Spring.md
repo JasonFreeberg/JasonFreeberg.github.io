@@ -62,7 +62,7 @@ In the console output, save the `principalId` for later.
 
 ### Key Vault References
 
-When deployed on App Service, our Spring app will be able to access these secrets through [Application Settings](https://docs.microsoft.com/en-us/azure/app-service/web-sites-configure#app-settings). We will now configure the Maven plugin to set the app settings when we deploy the app.
+When our Spring app is running on App Service, the secrets will be exposed as environment variables or "[Application Settings](https://docs.microsoft.com/en-us/azure/app-service/web-sites-configure#app-settings)". We will now create these app settings using the Azure CLI.
 
 1. First, we need the URI's of our three secrets. Run the commands below and copy the `id` value in the console output.
 
