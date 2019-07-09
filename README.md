@@ -189,6 +189,22 @@ To test the theme, run `bundle exec rake preview` and open your browser at `http
 - [jQuery throttle / debounce](http://benalman.com/projects/jquery-throttle-debounce-plugin/)
 - [Lunr](http://lunrjs.com)
 
+# Jekyll Cheat Sheet
+
+Things I always forget how to do.
+
+## Run the local server
+
+```bash
+bundle exec jekyll serve
+```
+
+## Link to another post
+
+```md
+[lorem ipsum]({{ site.baseurl }}{% post_url 2019-07-07-Key Vault References with Spring %})
+```
+
 ---
 
 ## License
