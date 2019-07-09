@@ -8,9 +8,9 @@ tags:
     - App Service
 ---
 
-Azure Key Vault provides a centralized service for managing secrets and certificates with full control over access policies and auditing capabilities. This article will show how to wire up a Spring Boot application on App Service to read a database username, password, and URL from Key Vault. Using Key Vault references requires little to zero code changes, but will require some configuration acrobatics.
+[Azure Key Vault](https://docs.microsoft.com/en-us/azure/key-vault/) provides a centralized service for managing secrets and certificates with full control over access policies and auditing capabilities. This article will show how to wire up a Spring Boot application on App Service to read a database username, password, and URL from Key Vault. Using Key Vault references requires little to zero code changes, but will require some configuration acrobatics.
 
-> See [the previous article]({{ site.baseurl }}{% post_url 2019-07-07-Data-Sources-with-Spring %}) for instructions on setting up the Postgres Server and deploying the app to App Service.
+> See [the previous article]({{ site.baseurl }}{% post_url 2019-07-07-Data-Sources-with-Spring %}) for instructions on setting up the Postgres server and deploying the app to App Service.
 
 ## Set up a Managed Identity
 
@@ -72,23 +72,13 @@ When deployed on App Service, our Spring app will be able to access these secret
     az keyvault secret show --vault-name java-app-key-vault --name POSTGRES-PASSWORD
     ```
 
-1. Add the following to the Maven plugin section of the `pom.xml`. Adding this configuration will create the app settings when we deploy the app. For each setting,replace "YOUR_SECRET_URI" with the corresponding id's from the previous step.
+1. Now we will create the app settings with the Key Vault references. For each setting, replace "YOUR_SECRET_URI" with the corresponding id's from the previous step.
 
-    ```xml
-     <appSettings>
-      <property>
-        <name>SPRING_DATASOURCE_URL</name>
-        <value>@Microsoft.KeyVault(SecretUri=YOUR_SECRET_URI)</value>
-      </property>
-      <property>
-        <name>SPRING_DATASOURCE_USERNAME</name>
-        <value>@Microsoft.KeyVault(SecretUri=YOUR_SECRET_URI)</value>
-      </property>
-      <property>
-        <name>SPRING_DATASOURCE_PASSWORD</name>
-        <value>@Microsoft.KeyVault(SecretUri=YOUR_SECRET_URI)</value>
-      </property>
-    </appSettings>
+    ```bash
+    az webapp config appsettings set -n <your_app_name> -g <resource_group> --settings \
+        SPRING_DATASOURCE_URL=@Microsoft.KeyVault(SecretUri=YOUR_SECRET_URI)\
+        SPRING_DATASOURCE_USERNAME=@Microsoft.KeyVault(SecretUri=YOUR_SECRET_URI)\
+        SPRING_DATASOURCE_PASSWORD=@Microsoft.KeyVault(SecretUri=YOUR_SECRET_URI)
     ```
 
 A Key Vault reference is of the form `@Microsoft.KeyVault(SecretUri=<SecretURI>)`, where `<SecretURI>` is data-plane URI of a secret in Key Vault, including a version. There is an alternate syntax [documented here](https://docs.microsoft.com/en-us/azure/app-service/app-service-key-vault-references#reference-syntax).
