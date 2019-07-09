@@ -56,6 +56,7 @@ In the console output, save the `principalId` for later.
     az keyvault secret set --name POSTGRES-URL           \
                        --value $POSTGRES_URL             \
                        --vault-name java-app-key-vault
+    ```
 
 ## Configuring our App
 
