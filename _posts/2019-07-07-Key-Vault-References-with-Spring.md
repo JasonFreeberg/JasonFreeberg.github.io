@@ -2,6 +2,10 @@
 title: "Azure Key Vault References with Spring Apps"
 toc: true
 toc_sticky: true
+excerpt: "Securely store and access your connection strings with minimal code changes."
+header:
+    overlay_image: "assets/img/locks-header.jpg"
+    overlay_filter: 0.4
 tags:
     - Azure
     - Java
@@ -89,7 +93,7 @@ The Key Vault references will be replaced with the actual secrets when our App S
 
 1. Create a file under `src/main/resources` named `application-dev.properties`. Copy/paste the following into the file:
 
-    ```txt
+    ```yml
     # ===============================
     # = DATA SOURCE
     # ===============================
@@ -112,7 +116,7 @@ The Key Vault references will be replaced with the actual secrets when our App S
 
 1. Create a file under `src/main/resources` named `application-dev.properties`. Copy/paste the following into the file. Notice that we do not set the connection strings here. Instead, Spring will resolve them at runtime by looking for the uppercase and underscored versions of `spring.datasource.url`, `spring.datasource.username`, and `spring.datasource.password`.
 
-    ```txt
+    ```yml
     # ===============================
     # = DATA SOURCE
     # ===============================
@@ -136,7 +140,7 @@ The Key Vault references will be replaced with the actual secrets when our App S
 
 1. Now we can slim-down our original `application.properties` file. Replace the contents of `application.properties` with the following:
 
-    ```txt
+    ```yml
     # Active profile is set by Maven
     spring.profiles.active=@spring.profiles.active@
 

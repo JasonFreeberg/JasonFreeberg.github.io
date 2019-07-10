@@ -2,6 +2,10 @@
 title: "Data Sources for Spring Apps"
 toc: true
 toc_sticky: true
+excerpt: "How to spin up a Postgres Server on Azure, deploy a Spring Boot app to App Service, and connect the two together."
+header:
+    overlay_image: "assets/img/data-graph-header.jpg"
+    overlay_filter: 0.4
 tags:
     - Azure
     - Java
