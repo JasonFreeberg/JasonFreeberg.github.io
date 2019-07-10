@@ -4,8 +4,11 @@ toc: true
 toc_sticky: true
 excerpt: "How to spin up a Postgres Server on Azure, deploy a Spring Boot app to App Service, and connect the two together."
 header:
+    teaser: "assets/img/data-graph-header.jpg"
+    og_image: "assets/img/data-graph-header.jpg"
     overlay_image: "assets/img/data-graph-header.jpg"
     overlay_filter: 0.4
+teaser: "assets/img/data-graph-header.jpg"
 tags:
     - Azure
     - Java

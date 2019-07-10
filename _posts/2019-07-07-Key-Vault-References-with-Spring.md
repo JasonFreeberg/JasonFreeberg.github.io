@@ -4,6 +4,8 @@ toc: true
 toc_sticky: true
 excerpt: "Securely store and access your connection strings with minimal code changes."
 header:
+    teaser: "assets/img/locks-header.jpg"
+    og_image: "assets/img/locks-header.jpg"
     overlay_image: "assets/img/locks-header.jpg"
     overlay_filter: 0.4
 tags:
