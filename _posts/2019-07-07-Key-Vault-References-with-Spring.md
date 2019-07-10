@@ -14,7 +14,7 @@ tags:
     - App Service
 ---
 
-[Azure Key Vault](https://docs.microsoft.com/en-us/azure/key-vault/) provides a centralized service for managing secrets and certificates with full control over access policies and auditing capabilities. This article will show how to wire up a Spring Boot application on App Service to read a database username, password, and URL from Key Vault. Using Key Vault references requires little to zero code changes, but will require some configuration acrobatics.
+[Azure Key Vault](https://docs.microsoft.com/en-us/azure/key-vault/) provides a centralized service for managing secrets and certificates with full control over access policies and auditing capabilities. This article will show how to wire up a Spring Boot application on App Service to read a database username, password, and URL from Key Vault. Using Key Vault references requires **no** code changes, but we will need to do some configuration acrobatics.
 
 > See [the previous article]({{ site.baseurl }}{% post_url 2019-07-07-Data-Sources-with-Spring %}) for instructions on setting up the Postgres server and deploying the app to App Service.
 
@@ -65,6 +65,8 @@ In the console output, save the `principalId` for later.
     ```
 
 ## Configuring our App
+
+The following instructions assume you have completed the [previous tutorial]({{ site.baseurl }}{% post_url 2019-07-07-Data-Sources-with-Spring %}).
 
 ### Key Vault References
 
