@@ -12,3 +12,5 @@ Azure App Service is a managed service for hosting web and API applications. It'
 1. [Releasing to Production with Deployment Slots](https://azure.github.io/AppService/2020/07/07/zero_to_hero_pt3.html)
 1. [The App Service Migration Assistant](https://azure.github.io/AppService/2020/07/20/zero_to_hero_pt4.html)
 1. [Add and secure a custom domain name](https://azure.github.io/AppService/2020/07/28/zero_to_hero_pt5.html)
+1. [Securing your web app](https://azure.github.io/AppService/2020/08/14/zero_to_hero_pt6.html)
+1. [Architecting a multi-tier web application](https://azure.github.io/AppService/2020/10/05/zero_to_hero_pt7.html)
